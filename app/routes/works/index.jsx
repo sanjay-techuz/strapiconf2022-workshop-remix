@@ -19,7 +19,7 @@ export async function loader() {
   checkStatus(res);
 
   const data = await res.json();
-    console.log(data)
+  console.log(data);
   // Did Strapi return an error object in its response?
   if (data.error) {
     console.log("Error", data.error);
@@ -41,8 +41,11 @@ export default function Works() {
             <span className="inline-block w-2 h-2 ml-1 rounded-full bg-orangecol"></span>
           </h2>
         </div>
-        {works.map((work,idx) => (
-          <div key={idx} className="flex flex-wrap justify-between md:flex-nowrap md:py-24 py-12">
+        {works.map((work, idx) => (
+          <div
+            key={idx}
+            className="flex flex-wrap justify-between md:flex-nowrap md:py-24 py-12"
+          >
             <div className="lg:max-w-[calc(40.66%-0.938rem)] md:max-w-[calc(40%-0.938rem)] lg:px-0 px-6 md:mb-0 mb-10 w-full rounded-[1.25rem] flex flex-col">
               <h3 className="text-[1.375rem] pb-5 font-blancotrialextrabold leading-[2rem]">
                 {work.attributes.title}
@@ -72,10 +75,7 @@ export default function Works() {
             </div>
             <div className="lg:max-w-[calc(59.33%-0.938rem)] md:max-w-[calc(60%-0.938rem)] w-full rounded-[1.25rem] flex flex-col justify-center items-center">
               <img
-                src={
-                  "http://localhost:1337" +
-                  work.attributes.featuredImage.data.attributes.url
-                }
+                src={work.attributes.featuredImage.data.attributes.url}
                 alt={`Techuz portfolio ${work.attributes.title}`}
                 className="m-auto rounded-lg md:rounded-none"
               />

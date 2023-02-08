@@ -96,7 +96,6 @@ export default function WorkRoute() {
         >
           <img
             src={
-              "http://localhost:1337" +
               work.attributes.heroImage.data.attributes.url
             }
             alt={work.heroImageAlt}
@@ -237,7 +236,7 @@ export default function WorkRoute() {
                       }`}
                     >
                       <img
-                        src={"http://localhost:1337" + image.attributes.url}
+                        src={image.attributes.url}
                         alt="web_mockup_images"
                         className="md:w-full w-10/12 mx-auto"
                       />
@@ -267,7 +266,7 @@ export default function WorkRoute() {
                       }`}
                     >
                       <img
-                        src={"http://localhost:1337" + image.attributes.url}
+                        src={image.attributes.url}
                         alt="tablet_mockup_images"
                         className="md:w-full w-10/12 mx-auto"
                       />
@@ -292,7 +291,7 @@ export default function WorkRoute() {
                       className="md:w-[calc(33.333333%-0.938rem)] w-full md:mb-0 mb-7 md:text-left text-center"
                     >
                       <img
-                        src={"http://localhost:1337" + image.attributes.url}
+                        src={image.attributes.url}
                         alt="mobile_mockup_images"
                         className="md:w-full w-10/12 mx-auto"
                       />
@@ -312,10 +311,7 @@ export default function WorkRoute() {
               <span className="bg-orangecol w-2 h-2 rounded-full inline-block ml-1"></span>
             </h2>
             <img
-              src={
-                "http://localhost:1337" +
-                work.attributes.wireframeImage.data.attributes.url
-              }
+              src={work.attributes.wireframeImage.data.attributes.url}
               alt={work.attributes.title + " image"}
             />
           </div>
