@@ -8,8 +8,6 @@ import {
   ScrollRestoration,
 } from "remix";
 import styles from "./styles/tailwind.css";
-import mainStyles from "./styles/main.css";
-import blancotrialBoldWebfont from "./styles/fonts/blancotrial-bold-webfont.woff";
 
 export function links () {
   return [{
@@ -17,8 +15,6 @@ export function links () {
     href: "https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
   },
   { rel: "stylesheet", href: styles },
-  { rel: "stylesheet", href: mainStyles },
-  { rel: "stylesheet", href: blancotrialBoldWebfont },
 
 ]
 }
