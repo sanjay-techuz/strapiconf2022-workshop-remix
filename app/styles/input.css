@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-class {
+    @apply ...;
+  }
+
+  @font-face {
+    font-family: "gorditablack";
+    font-display: swap;
+    src: url("/assets/fonts/gordita-black-webfont.woff2") format("woff2"),
+      url("/assets/fonts/gordita-black-webfont.woff") format("woff"),
+      url("/assets/fonts/gordita-black-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "gorditabold";
+    font-display: swap;
+    src: url("/assets/fonts/gordita-bold-webfont.woff2") format("woff2"),
+      url("/assets/fonts/gordita-bold-webfont.woff") format("woff"),
+      url("/assets/fonts/gordita-bold-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "gorditalight";
+    font-display: swap;
+    src: url("/assets/fonts/gordita-light-webfont.woff2") format("woff2"),
+      url("/assets/fonts/gordita-light-webfont.woff") format("woff"),
+      url("/assets/fonts/gordita-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "gorditamedium";
+    font-display: swap;
+    src: url("/assets/fonts/gordita-medium-webfont.woff2") format("woff2"),
+      url("/assets/fonts/gordita-medium-webfont.woff") format("woff"),
+      url("/assets/fonts/gordita-medium-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "gorditaregular";
+    font-display: swap;
+    src: url("/assets/fonts/gordita-regular-webfont.woff2") format("woff2"),
+      url("/assets/fonts/gordita-regular-webfont.woff") format("woff"),
+      url("/assets/fonts/gordita-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blanco_trialbold";
+    font-display: swap;
+    src: url("/assets/fonts/blancotrial-bold-webfont.eot");
+    src: url("/assets/fonts/blancotrial-bold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/assets/fonts/blancotrial-bold-webfont.woff2") format("woff2"),
+      url("/assets/fonts/blancotrial-bold-webfont.woff") format("woff"),
+      url("/assets/fonts/blancotrial-bold-webfont.ttf") format("truetype"),
+      url("/assets/fonts/blancotrial-bold-webfont.svg#blanco_trialbold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blanco_trialextra_bold";
+    font-display: swap;
+    src: url("/assets/fonts/blancotrial-extrabold-webfont.eot");
+    src: url("/assets/fonts/blancotrial-extrabold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/assets/fonts/blancotrial-extrabold-webfont.woff2") format("woff2"),
+      url("/assets/fonts/blancotrial-extrabold-webfont.woff") format("woff"),
+      url("/assets/fonts/blancotrial-extrabold-webfont.ttf") format("truetype"),
+      url("/assets/fonts/blancotrial-extrabold-webfont.svg#blanco_trialextra_bold")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blanco_trialmedium";
+    font-display: swap;
+    src: url("/assets/fonts/blancotrial-medium-webfont.eot");
+    src: url("/assets/fonts/blancotrial-medium-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/assets/fonts/blancotrial-medium-webfont.woff2") format("woff2"),
+      url("/assets/fonts/blancotrial-medium-webfont.woff") format("woff"),
+      url("/assets/fonts/blancotrial-medium-webfont.ttf") format("truetype"),
+      url("/assets/fonts/blancotrial-medium-webfont.svg#blanco_trialmedium")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "blanco_trialregular";
+    font-display: swap;
+    src: url("/assets/fonts/blancotrial-regular-webfont.eot");
+    src: url("/assets/fonts/blancotrial-regular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("/assets/fonts/blancotrial-regular-webfont.woff2") format("woff2"),
+      url("/assets/fonts/blancotrial-regular-webfont.woff") format("woff"),
+      url("/assets/fonts/blancotrial-regular-webfont.ttf") format("truetype"),
+      url("/assets/fonts/blancotrial-regular-webfont.svg#blanco_trialregular")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Common */
+html,
+body {
+  @apply font-gorditaregular text-grey text-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-black;
+}
+
+p {
+  @apply font-gorditaregular;
+}
+  
+}
